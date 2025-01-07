@@ -71,7 +71,7 @@ def main() :
                 file.write(log)
             with open(file_path, "r") as file : # 檢查是否需要上傳數據
                 lines = file.readlines()
-                if len(lines) >= 144 :  # 已經記錄滿一天的數據 ##########
+                if len(lines) >= 144 :  # 已經記錄滿一天的數據
                     print(f"開始上傳數據檔案 {file_path} 到 Nextcloud 中。")
                     upload_file(nc, file_path)
             time.sleep(600)  # 每 10 分鐘執行一次
