@@ -2,16 +2,19 @@ import RPi.GPIO as GPIO
 import os
 import time
 from nc_py_api import Nextcloud
+from dotenv import load_dotenv
+
+load_dotenv() # 引入環境變數
 
 # GPIO 引腳設置
 D0_PIN = 7
 RELAY_PIN = 17
 
 # Nextcloud 配置
-nc_url = "http://192.168.123.51/nextcloud"
-nc_user = "root"
-nc_pw = "123456"
-data_dir = "/home/LSA/testdata/"  # 請確保目錄已存在或程式會自動創建
+nc_url = os.getenv('nc_url')
+nc_user = os.getenv('nc_user')
+nc_pw = os.getenv('nc_pw')
+data_dir = os.getenv('data_dir')  # 請確保目錄已存在或程式會自動創建
 if not os.path.exists(data_dir) :
     os.makedirs(data_dir)
 
