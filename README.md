@@ -1,12 +1,12 @@
 # LSA_waterplant_LazyFarmer
 
 ## 目錄 
-1.[簡介](#簡介 Itroduction:)
-2.[成員](#成員 Team Member:)
-3.[使用設備](#使用設備 Hardware Implementation:)
-4.[使用軟體](#使用軟體 Software Implementation:)
-5.[製作過程](#製作過程 Process:)
-6.[參考資料來源](#參考資料來源 References:)
+1.[簡介](#簡介)
+2.[成員](#成員)
+3.[使用設備](#使用設備)
+4.[使用軟體](#使用軟體)
+5.[製作過程](#製作過程)
+6.[參考資料來源](#參考資料來源)
 
 ## 簡介 Itroduction:
 有一位農夫日日夜夜辛勤的在田間耕種，但是人工種植的方式費時又費力，<br>
@@ -34,7 +34,23 @@
 * 電焊槍        x1(管237 Moli實驗室借用)
 
 ## 使用軟體 Software Implementation:
-* Nextcloud
+<details> 
+<summary><h3> Nextcloud </h3></summary> 
+以下是NextCloud的安裝步驟:<br>
+1. <strong>更新</strong><br> <i>$ sudo apt-get update && sudo apt-get upgrade</i> <br><br>
+2. <strong>安裝Apache2 和 PHP</strong><br> 
+  <i>$ sudo apt-get install apache2 -y</i> <br>
+  <i>$ sudo apt-get install php</i><br><br>
+3. <strong>安裝 NextCloud</strong><br>
+  <i>$ cd /**var**/www/html</i><br>
+  <i>$ curl https://download.nextcloud.com/server/releases/nextcloud-18.0.3.tar.bz2 | sudo tar -jxv</i><br><br>
+4. <strong>建立同步資料夾</strong><br>
+  <i>$ sudo mkdir -p /var/www/html/nextcloud/data</i><br>
+  <i>$ sudo chown -R www-data:www-data /var/www/html/nextcloud/</i><br>
+  <i>$ sudo chmod 750 /var/www/html/nextcloud/data </i><br><br>
+5. <strong>用瀏覽器打開Nextcloud管理介面，設定帳號密碼</strong>
+  
+</details>
   <br>
 
 ## 製作過程 Process:
@@ -54,6 +70,10 @@
 4. 當資料筆數達到144筆(也就是剛好過完一天時)就將資料上傳到Nextcloud的共享資料夾同步
 5. 接著定義login_to_nextcloud()函式，判斷是否成功登入Nextcloud
 6. 最後在upload_file()函式將資料nc以.txt檔上傳至指定路徑file_path，並刪掉樹梅派上記錄檔(避免佔用空間)
+
+## 成品展示 Final Result:
+
+![S__14868539](https://github.com/user-attachments/assets/3b219268-8202-4f5e-a946-973e645df686)
 
 ## 參考資料來源 References:
 1. https://absorbed-toaster-205.notion.site/NextCloud-16e29288588080b7acd2da254b46425a
