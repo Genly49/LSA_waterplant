@@ -1,11 +1,5 @@
 # LSA_waterplant_LazyFarmer
-## 目錄 
-1.[簡介](#簡介)
-2.[成員](#成員)
-3.[使用設備](#使用設備)
-4.[使用軟體](#使用軟體)
-5.[製作過程](#製作過程)
-6.[參考資料來源](#參考資料來源)
+[TOC]
 
 ## 簡介 Itroduction:
 有一位農夫日日夜夜辛勤的在田間耕種，但是人工種植的方式費時又費力，<br>
@@ -53,7 +47,12 @@
 5. 接著定義login_to_nextcloud()函式，判斷是否成功登入Nextcloud
 6. 最後在upload_file()函式將資料nc以.txt檔上傳至指定路徑file_path，並刪掉樹梅派上記錄檔(避免佔用空間)
 
-## 參考資料來源 References
-https://absorbed-toaster-205.notion.site/NextCloud-16e29288588080b7acd2da254b46425a
-[學長姐報告](https://github.com/NCNU-OpenSource/WaterPlant)
-[]()
+## 參考資料來源 References:
+1. https://absorbed-toaster-205.notion.site/NextCloud-16e29288588080b7acd2da254b46425a
+2. [學長姐報告](https://github.com/NCNU-OpenSource/WaterPlant)
+3. [在Raspberry pi安裝Nextcloud](https://atceiling.blogspot.com/2020/03/raspberry-pi-70-nextcloud-talk.html#google_vignette)
+4. [How to Setup a Raspberry Pi Nextcloud Server](https://pimylifeup.com/raspberry-pi-nextcloud-server/)
+5. [安裝Apache Web Server及PHP](https://atceiling.blogspot.com/2020/03/raspberry-pi-60apache-web-serverphp.html)
+6. [Nextcloud 線上手冊](file:///C:/Users/DanielC/Downloads/nextcloud-G0B.html)
+7. [焊接電子電路](https://www.youtube.com/watch?v=UUIHBjsaMeM&ab_channel=%E9%BB%83%E4%BF%A1%E6%83%A0%E7%9A%84%E7%98%8B%E7%8B%82%E6%95%99%E5%AE%A4)
+8. [Arduino控制微型水泵(繼電器模組)](https://www.youtube.com/watch?v=V3daz51JeoE&ab_channel=%E5%90%B3%E6%9F%8F%E5%BB%B7)
