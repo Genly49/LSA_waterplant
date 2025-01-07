@@ -1,4 +1,12 @@
 # LSA_waterplant_LazyFarmer
+## 目錄 
+1. [簡介](#簡介)
+2. [成員](#成員)
+3. [使用設備](#使用設備)
+4. [使用軟體](#使用軟體)
+5. [製作過程](#製作過程)
+6. [參考資料來源](#參考資料來源)
+
 ## 簡介 Itroduction:
 有一位農夫日日夜夜辛勤的在田間耕種，但是人工種植的方式費時又費力，<br>
 農夫也想要子早點下班去打Game, 追劇，所以突發奇想使用 Raspberry Pi3<br>
@@ -37,7 +45,6 @@
 4. 由於馬達的接口是裸線設計，所以我們使用電焊槍將裸線與杜邦線針腳焊接固定
 
 ### 軟體程式:
-
 ![messageImage_1735751484024](https://github.com/user-attachments/assets/c662a6f7-cf59-4dbb-9249-74078d3a4894)
 1. 首先在Pi中創建nc_getsoil.py程式檔，並import RPi.GPIO 和 Nextcloud => 完成初始化設定
 2. 在def main()中，透過感測器回傳的高低電壓判斷土壤是濕潤或乾燥，並同時決定是否開啟馬達
@@ -47,5 +54,6 @@
 6. 最後在upload_file()函式將資料nc以.txt檔上傳至指定路徑file_path，並刪掉樹梅派上記錄檔(避免佔用空間)
 
 ## 參考資料來源 References
-(https://absorbed-toaster-205.notion.site/NextCloud-16e29288588080b7acd2da254b46425a)
-
+https://absorbed-toaster-205.notion.site/NextCloud-16e29288588080b7acd2da254b46425a
+[學長姐報告](https://github.com/NCNU-OpenSource/WaterPlant)
+[]()
