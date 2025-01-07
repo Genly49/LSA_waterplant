@@ -25,8 +25,9 @@
 
 ## 使用軟體 Software Implementation:
 * Nextcloud
+  <br>
 
-## 製作過程
+## 製作過程 Process
 
 ![messageImage_1736182405846](https://github.com/user-attachments/assets/dd6b0101-8aa3-4784-af23-bbdab0acef1a)
 ### 硬體電路:
@@ -45,5 +46,6 @@
 5. 接著定義login_to_nextcloud()函式，判斷是否成功登入Nextcloud
 6. 最後在upload_file()函式將資料nc以.txt檔上傳至指定路徑file_path，並刪掉樹梅派上記錄檔(避免佔用空間)
 
-
+## 參考資料來源 References
+(https://absorbed-toaster-205.notion.site/NextCloud-16e29288588080b7acd2da254b46425a)
 
