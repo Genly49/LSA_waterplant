@@ -38,4 +38,12 @@
 ### 軟體程式:
 
 ![messageImage_1735751484024](https://github.com/user-attachments/assets/c662a6f7-cf59-4dbb-9249-74078d3a4894)
-1. 首先將
+1. 首先在Pi中創建nc_getsoil.py程式檔，並import RPi.GPIO 和 Nextcloud => 完成初始化設定
+2. 在def main()中，透過感測器回傳的高低電壓判斷土壤是濕潤或乾燥，並同時決定是否開啟馬達
+3. 由於過量的澆水也會導致植物掛掉，所以我們設定每10分鐘偵測土壤濕度，每次澆水5秒鐘
+4. 當資料筆數達到144筆(也就是剛好過完一天時)就將資料上傳到Nextcloud的共享資料夾同步
+5. 接著定義login_to_nextcloud()函式，判斷是否成功登入Nextcloud
+6. 最後在upload_file()函式將資料nc以.txt檔上傳至指定路徑file_path，並刪掉樹梅派上記錄檔(避免佔用空間)
+
+
+
