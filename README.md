@@ -1,5 +1,12 @@
 # LSA_waterplant_LazyFarmer
-[TOC]
+
+## 目錄 
+1.[簡介](#簡介 Itroduction:)
+2.[成員](#成員 Team Member:)
+3.[使用設備](#使用設備 Hardware Implementation:)
+4.[使用軟體](#使用軟體 Software Implementation:)
+5.[製作過程](#製作過程 Process:)
+6.[參考資料來源](#參考資料來源 References:)
 
 ## 簡介 Itroduction:
 有一位農夫日日夜夜辛勤的在田間耕種，但是人工種植的方式費時又費力，<br>
@@ -18,18 +25,19 @@
 * 組員4: 陳厚駪 [寫程式]
 
 ## 使用設備 Hardware Implementation:
-* Raspberry Pi3(本課助教提供)
-* 土壤濕度檢測器(自行購買)
-* 澆水馬達(自行購買)
-* 繼電器(自行購買)
-* 受試植物(~~自願~~自備)
-* 電焊槍(管237 Moli實驗室借用)
+* Raspberry Pi3 x1(本課助教提供)
+* 土壤濕度檢測器 x1(自行購買)
+* 澆水馬達      x1(自行購買)
+* 繼電器        x1(自行購買)
+* 受試植物      x1(~~自願~~自備)
+* 寶特瓶        x1(自備)
+* 電焊槍        x1(管237 Moli實驗室借用)
 
 ## 使用軟體 Software Implementation:
 * Nextcloud
   <br>
 
-## 製作過程 Process
+## 製作過程 Process:
 
 ![messageImage_1736182405846](https://github.com/user-attachments/assets/dd6b0101-8aa3-4784-af23-bbdab0acef1a)
 ### 硬體電路:
@@ -53,6 +61,5 @@
 3. [在Raspberry pi安裝Nextcloud](https://atceiling.blogspot.com/2020/03/raspberry-pi-70-nextcloud-talk.html#google_vignette)
 4. [How to Setup a Raspberry Pi Nextcloud Server](https://pimylifeup.com/raspberry-pi-nextcloud-server/)
 5. [安裝Apache Web Server及PHP](https://atceiling.blogspot.com/2020/03/raspberry-pi-60apache-web-serverphp.html)
-6. [Nextcloud 線上手冊](file:///C:/Users/DanielC/Downloads/nextcloud-G0B.html)
-7. [焊接電子電路](https://www.youtube.com/watch?v=UUIHBjsaMeM&ab_channel=%E9%BB%83%E4%BF%A1%E6%83%A0%E7%9A%84%E7%98%8B%E7%8B%82%E6%95%99%E5%AE%A4)
-8. [Arduino控制微型水泵(繼電器模組)](https://www.youtube.com/watch?v=V3daz51JeoE&ab_channel=%E5%90%B3%E6%9F%8F%E5%BB%B7)
+6. [焊接電子電路](https://www.youtube.com/watch?v=UUIHBjsaMeM&ab_channel=%E9%BB%83%E4%BF%A1%E6%83%A0%E7%9A%84%E7%98%8B%E7%8B%82%E6%95%99%E5%AE%A4)
+7. [Arduino控制微型水泵(繼電器模組)](https://www.youtube.com/watch?v=V3daz51JeoE&ab_channel=%E5%90%B3%E6%9F%8F%E5%BB%B7)
