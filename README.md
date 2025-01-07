@@ -27,9 +27,15 @@
 * Nextcloud
 
 ## 製作過程
+
+![messageImage_1736182405846](https://github.com/user-attachments/assets/dd6b0101-8aa3-4784-af23-bbdab0acef1a)
 ### 硬體電路:
 1. 將土壤濕度檢測器接上Pi的3V3 power, GROUND, GPIO 7(CE1) 腳位
 2. 將繼電器接上Pi的5V power, GROUND, GPIO 17 腳位
 3. 將澆水馬達的正極接上繼電器/負極接上Pi的GROUND 腳位
 4. 由於馬達的接口是裸線設計，所以我們使用電焊槍將裸線與杜邦線針腳焊接固定
-5. ![messageImage_1736182405846](https://github.com/user-attachments/assets/dd6b0101-8aa3-4784-af23-bbdab0acef1a)
+
+### 軟體程式:
+
+![messageImage_1735751484024](https://github.com/user-attachments/assets/c662a6f7-cf59-4dbb-9249-74078d3a4894)
+1. 首先將
